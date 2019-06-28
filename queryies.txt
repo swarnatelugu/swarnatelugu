@@ -1,0 +1,1 @@
+create table product(productId int(10), name varchar(45) not null, cost int(10) unsigned not null,catagoryId int(10),primary key(productId),constraint fk_product_1 foreign key fk_product_1 (catagoryId) references catagory(catagoryId) on delete restrict on update restrict );
